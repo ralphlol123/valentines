@@ -4,6 +4,17 @@ import { EffectCards } from 'swiper/modules';
 
 const modules = [EffectCards];
 
+// Get the current date
+const currentDate = new Date();
+// Set the target date (February 14, 2024)
+const targetDate = new Date('2024-02-14');
+
+if (currentDate < targetDate) {
+  // Redirect the user to a different page
+  // For example, redirect to a page informing that the content will be available on February 14, 2024
+  // window.location.href = '/content-not-available-yet';
+  window.location.href = '/countdown';
+}
 
 </script>
 
